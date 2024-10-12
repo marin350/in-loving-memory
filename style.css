@@ -1,0 +1,86 @@
+body{
+    background-color: floralwhite;
+    font-family: "adobe-caslon-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+#menu {
+    position: relative;
+    list-style-type: none;
+    padding-left: 5px;
+    z-index: 1000;
+    /* 1 */
+    display: inline-block;
+    text-align: center;
+  }
+
+#menu li {
+    margin: 2px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    opacity: 0;
+  }
+
+  #forPuzzle {
+    position: absolute;
+    width: 65vw;
+    height: 65vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: grab;
+  }
+
+  .polypiece {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .moving {
+    transition-property: top, left;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+  }
+
+  .gameCanvas {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+  }
+
+.button{
+  text-decoration: none;
+  color: black;
+  z-index: 1000000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin: 0;
+  text-align: center;
+}
+.button:hover{
+  font-style: italic;
+  position: relative;
+}
+#b-container{
+  height: 30px;
+  border: 1px black solid;
+  padding: 5px;
+  border-radius: 10px;
+  width: 7%;
+  justify-content: center;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -150px;
+}
+:root {
+  --grey: rgb(202, 198, 198);
+}
