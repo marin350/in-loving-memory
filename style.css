@@ -84,3 +84,62 @@ body{
 :root {
   --grey: rgb(202, 198, 198);
 }
+.mast{
+  position: relative;
+  top: 20px;
+  font-style: italic;
+  margin-left: 3%;
+  font-size: 35px;
+  letter-spacing: -1px;
+}
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.line {
+  font-size: 40px;
+  position: relative;
+  top: 4px;
+}
+.hamburger:hover{
+  border: 1px solid var(--grey);
+  color: var(--grey);
+}
+
+.menu1 {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 35px;
+}
+
+.menu1 ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.menu1 ul li {
+  margin: 10px 0;
+}
+
+.menu1 ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu1 ul li a:hover {
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+}

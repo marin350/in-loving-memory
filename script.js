@@ -1680,3 +1680,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     loadInitialFile();
     requestAnimationFrame(animate);
+
+
+
+  const hamburger = document.getElementById('hamburger');
+const menu1 = document.getElementById('menu1');
+
+hamburger.addEventListener('click', () => {
+  menu1.style.display = menu1.style.display === 'block' ? 'none' : 'block';
+});

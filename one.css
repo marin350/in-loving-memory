@@ -186,3 +186,34 @@ body{
 }
 
 
+.hamburger1 {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .line1 {
+    font-size: 40px;
+    position: relative;
+    top: 4px;
+    text-decoration: none;
+    color: black;
+  }
+  .hamburger1:hover{
+    border: 1px solid var(--grey);
+    color: var(--grey);
+  }
+  .line1:hover{
+    color: var(--grey);
+  }
+  
+  
